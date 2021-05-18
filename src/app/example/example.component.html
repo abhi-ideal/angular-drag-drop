@@ -1,0 +1,20 @@
+<div class="row">
+	<div class="column left">
+		<div id="div1" cdkDrag cdkDropList cdkDropListConnectedTo="drop-list" *ngFor="let type of types"
+			[cdkDragData]="type" (cdkDragMoved)="moved($event)">
+			{{type.text}}
+			<div *cdkDragPlaceholder class="field-placeholder"></div>
+
+		</div>
+	</div>
+	<div class="column right">
+		<h2 style="text-align: center">Box2</h2>
+		<div #dropZone class="dropZone" cdkDropList cdkDropListSortingDisabled="true" id="drop-list" 
+           (cdkDropListDropped)="itemDropped($event)">
+			<div *ngFor="let field of fields;let i=index" cdkDrag (cdkDragDropped)="changePosition($event,field)"
+          style="position:absolute;z-index:i" [style.top]="field.top" [style.left]="field.left">
+					{{field.text}}
+			</div>
+		</div>
+
+	</div>

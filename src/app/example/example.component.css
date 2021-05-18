@@ -1,0 +1,79 @@
+.mat-accordion {
+    display: block;
+    transform-origin: top left;
+    width: 225px; /* this will be the height of the accordion (inversed due to rotation) */
+  }
+
+
+
+#div1 {
+  width: 200px;
+  height: 300px;
+}
+
+#div2 {
+
+  width: 90%;
+
+  height: 500px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+#tr_general {
+  vertical-align: top;
+  border: 15px;
+}
+
+mat-grid-tile {
+  background: lightblue;
+  width: 200px;
+  height: 300px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+ .row {
+  display: flex;
+} 
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+
+
+.field-placeholder {
+ 
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  float: right;
+}
+
+fieldset {
+  height: 600px;
+}
+
+mat-list-item {
+  display: block !important;
+}
+.dropZone
+{
+  border:1px solid black;
+  position:relative;
+  height:320px;
+  width:320px;
+}
+
+
